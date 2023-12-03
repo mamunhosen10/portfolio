@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #191919;
+    color: #fff;
+}
+/*header section*/
+.header{
+    background-color: #272727;
+    padding: 20px  0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.header .logo{
+    width: 130px;
+    height: 40px;
+}
+.navbar-expand-lg{
+    padding: 0;
+}
+.navbar-brand{
+    padding: 0;
+}
+.navbar-nav .nav-link.active, 
+.navbar-nav .show > 
+.nav-link {
+    color: #fff;
+}
+.nav-link:focus, 
+.nav-link:hover {
+    color: #fff;
+}
+.header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 8px 20px 10px 0;
+}
+.header ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff !important;
+    font-size: 18px;
+}
+.header ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background: #ff004f;
+    transition: all 0.5s ease-in-out;
+}
+.header ul li a:hover::after{
+    width: 100%;
+}
+/*Banner section*/
+.banner-section{
+    padding: 170px 0 60px;
+}
+.banner-section h1{
+    font-size: 50px;
+    margin: 15px 0;
+}
+.banner-section h1 span{
+    color: #ff004f;
+}
+.banner-section h2{
+    font-size: 30px;
+    margin: 15px 0;
+}
+.banner-section h2 span{
+    color: #ff004f;
+}
+.banner-section p{
+    font-size: 16px;
+    padding-right: 35px;
+    margin: 0;
+    color: #ababab;
+}
+.banner-section a{
+    position: relative;
+    display: block;
+    margin: 30px 0;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+.banner-section a:hover{
+    background-color: #ff004f;
+}
+/*About section*/
+.about-section{
+    padding: 80px 0;
+}
+.about-section h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.left{
+    padding-left: 50px;
+}
+.left h2{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.left h2::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    background-color: #FF004F;
+    transition: all 0.4s ease-in-out;
+}
+.left ul{
+    padding: 0;
+}
+.left ul li{
+    list-style: none;
+    margin: 5px 0;
+    font-size: 18px;
+}
+.left ul li span{
+    font-weight: 500;
+    color: #f7f7f7;
+    margin-right: 15px;
+}
+.right{
+    padding-left: 50px;
+}
+.right h2{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.right h2::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    background-color: #FF004F;
+    transition: all 0.4s ease-in-out;
+}
+.right ul{
+    padding: 0;
+}
+.right ul li{
+    list-style: none;
+    margin: 5px 0;
+    font-size: 18px;
+}
+.right ul li span{
+    font-weight: 500;
+    color: #f7f7f7;
+    margin-right: 15px;
+}
+/*Skill section*/
+.skill-section{
+    padding: 60px 0;
+}
+.skill-section h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.skill-section .bars{
+    margin-bottom: 20px;
+}
+.skill-section .bars .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill-section .bars .info span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skill-section .line{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background-color: #262626;
+    margin-top: 5px;
+}
+.skill-section .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 95%;
+    left: 0;
+    top: 0;
+    background-color: #FF004F;
+}
+.skill-section .css::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 93%;
+    left: 0;
+    top: 0;
+    background-color: #FF004F;
+}
+.skill-section .bootstrap::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 94%;
+    left: 0;
+    top: 0;
+    background-color: #FF004F;
+}
+.skill-section .javascript::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 91%;
+    left: 0;
+    top: 0;
+    background-color: #FF004F;
+}
+.skill-section .jquery::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 97%;
+    left: 0;
+    top: 0;
+    background-color: #FF004F;
+}
+.skill-section .php::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 93%;
+    left: 0;
+    top: 0;
+    background-color: #FF004F;
+}
+.skill-section .mysql::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    left: 0;
+    top: 0;
+    background-color: #FF004F;
+}
+.skill-section .customize::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 97%;
+    left: 0;
+    top: 0;
+    background-color: #FF004F;
+}
+.skill-section .development::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 89%;
+    left: 0;
+    top: 0;
+    background-color: #FF004F;
+}
+.skill-section .figma::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    left: 0;
+    top: 0;
+    background-color: #FF004F;
+}
+/*service section*/
+.service-section{
+    padding: 60px 0;
+}
+.service-section h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.service-section .service-list{
+    background-color: #262626;
+    padding: 40px 30px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.service-section .service-list:hover{
+    background-color: #ff004f;
+    transform: translatey(-5px);
+}
+.service-section .service-list i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.service-section .service-list h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.service-section .service-list p{
+    margin: 0;
+}
+.service-section .service-list a{
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #fff;
+    display: inline-block;
+}
+/*portfolio section*/
+.portfolio-section{
+    padding: 60px 0;
+}
+
+.portfolio-section h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+.portfolio-section .filter ul{
+    padding: 0;
+    text-align: center;
+    margin: 30px 0 40px;
+}
+.portfolio-section .filter ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    background: #262626;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+}
+.portfolio-section .filter ul .active{
+    border: 1px solid #ff004f;
+    background-color: #FF004F;
+    color: #fff;
+    font-weight: 500;
+}
+.portfolio-section .filter ul li:hover{
+    border: 1px solid #ff004f;
+    background-color: #FF004F;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolio-section .images{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.portfolio-section .images img{
+    display: block;
+    transition: all 0.4s ease-in-out;
+    border-radius: 10px;    
+}
+.images-hover{
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    text-align: center;
+    padding: 30px;
+    transition: all 0.4s ease-in-out;
+    border-radius: 10px;
+}
+.images-hover h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20% 0 15px;
+}
+.images-hover p{
+    font-size: 14px;
+    margin: 0;
+    padding: 0 55px;
+}
+.images-hover a{
+    display: block;
+    margin: 15px auto 0;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 50px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+.images:hover .images-hover{
+    left: 0;
+    transition: all 0.4s ease-in-out;
+}
+.images:hover img{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+.portfolio-section .button a{
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+.portfolio-section .button a:hover{
+    background-color: #ff004f;
+}
+/*Testimonial section*/
+.testimonial-section{
+    padding: 40px 0 60px;
+}
+.testimonial-section h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.testimonial-box{
+    background-color: #262626;
+    padding: 25px 35px;
+    border-radius: 6px;
+    transition: all 0.4s ease-in-out;
+
+}
+.testimonial-box img{
+    width: 170px !important;
+    height: 170px;
+    border: 5px solid #FF004F;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+.testimonial-box h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+.testimonial-box:hover{
+    background-color: #FF004F;
+    transform: scale(1.01);
+    transition: all 0.4s ease-in-out;
+}
+.testimonial-box:hover img{
+    border: 5px solid #fff;
+    transition: all 0.4s ease-in-out;
+}
+.owl-dots{
+    margin-top: 30px !important;
+}
+.owl-dot{
+    height: 15px;
+    width: 15px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #ff004f !important;
+    margin: 0 5px;
+    transition: all 0.4s ease-in-out;
+}
+.owl-dot span {
+    width: 13px;
+    height: 13px;
+    margin: 5px 7px;
+    background: transparent !important;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+    transition: all 0.4s ease-in-out;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background-color: #FF004F !important;   
+    transition: all 0.4s ease-in-out;
+}
+/*Contact section*/
+.contact-section{
+    padding: 60px 0;
+}  
+.contact-section h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.contact-section h6{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    transform: translatey(-15px);
+}
+.contact-section p{
+    margin: 15px 0;
+}
+.contact-section p a{
+    color: #fff;
+    text-decoration: none;
+}
+.contact-section p a i{
+    color: #ff004f;
+    font-size: 22px;
+    margin-right: 15px;
+}
+.social-icon{
+    margin: 25px 0;
+}
+.social-icon ul{
+    padding: 0;
+
+}
+.social-icon ul li{
+    list-style: none;
+    display: inline-block;
+}
+.social-icon ul li a i{
+    color: #ababab;
+    font-size: 30px;
+    margin-right: 15px;
+    transition: all 0.4s ease-in-out;
+}
+.social-icon ul li a i:hover{
+    color: #ff004f;
+    transform: translateY(-2px);
+    
+}
+.contact-section .cv {
+    position: relative;
+    display: block;
+    margin: 30px 0;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 10px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+    background: #ff004f;
+}
+.contact-section .cv:hover{
+    background-color: transparent;
+}
+.contact-section form input,textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.contact-section form .btn-send{
+    width: 160px;
+    height: 50px;
+    line-height: 20px;
+    text-align: center;
+    background: #ff004f;
+    border: 1px solid #ff004f;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.contact-section form .btn-send:hover{
+    background-color: transparent;
+}
+/*Footer section*/
+footer{
+    padding: 20px 0;
+    background-color: #262626;
+}
+footer p{
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+footer p span{
+    color: #ff004f;
+}
+/*Responsive for mobile Device*/
+@media (min-width: 320px) and (max-width: 576px){
+    .navbar-toggler{ color: #fff !important; background-color: #fff !important; border: #fff !important;}
+     button:focus:not(:focus-visible) { box-shadow: none;}
+    .header ul li { margin: 5px auto;}
+    .navbar-nav { margin-top: 15px;}
+    .banner-section { padding: 100px 0 30px;}
+    .banner-section h6 { font-size: 18px; text-align: center; margin: 30px 0 15px;}
+    .banner-section h1 { font-size: 35px; text-align: center; margin: 30px 0 0;}
+    .banner-section h2 { font-size: 24px; text-align: center;}
+    .banner-section p { padding: 0; text-align: center; margin: 15px 0;}
+    .banner-section a{  margin: 20px auto; padding: 10px 24px;}
+    .about-section { padding: 30px 0;}
+    .about-section h1 { font-size: 35px; text-align: center; margin-bottom: 25px;}
+    .left{ padding-left: 40px;margin-bottom: 30px;}
+    .left h2 { font-size: 22px;}
+    .left ul li { font-size: 16px;}
+    .right{ padding-left: 40px;}
+    .right h2 { font-size: 22px;}
+    .right ul li { font-size: 16px;}
+    .tab-titles { margin: 0 12%;}
+    .tab-contents ul li { padding: 0; text-align: center; font-size: 14px;}
+    .img-fluid { margin: 15px auto;}
+    .skill-section{ padding: 30px 0;}
+    .skill-section h1 { font-size: 35px; margin-bottom: 30px;}
+    .service-section { padding: 30px 0;}
+    .service-section h1 { font-size: 35px; margin-bottom: 30px;}
+    .portfolio-section { padding: 30px 0;}
+    .portfolio-section h1 { font-size: 35px; margin-bottom: 15px;}
+    .portfolio-section .filter ul { margin: 15px 0;}
+    .portfolio-section .filter ul li { padding: 5px 7px; margin: 0 10px 10px 0;}
+    .portfolio-section .button a { margin: 20px auto 0; padding: 10px 35px; font-size: 16px;}
+    .testimonial-section { padding: 30px 0;}
+    .testimonial-section h1 { font-size: 35px; margin-bottom: 30px;}
+    .testimonial-box p{ text-align: center; margin-top: 15px;}
+    .contact-section { padding: 30px 0 5px;}
+    .contact-section h2 { font-size: 35px; margin-bottom: 20px; text-align: center;}
+    .contact-section h6{ transform: translateY(-5px); text-align: center; padding: 0 20px;}
+    .contact-section p { text-align: center;}
+    .social-icon ul { display: block; margin-left: 30%;}
+    .contact-section .cv { margin: 0 auto 30px; padding: 10px 35px; font-size: 16px;}
+    .contact-section form .btn-send { margin: 0 auto; padding: 10px 35px; font-size: 16px; display: block;}    
+}
